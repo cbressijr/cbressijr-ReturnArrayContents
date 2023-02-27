@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 public class ReturnArrayContents {
     /**
      * Return a string with an array's contents, formatted with spaces.
@@ -29,10 +29,11 @@ public class ReturnArrayContents {
      * @return a string representation of all values of nums, with the values separated by spaces.
      */
     public String arrayToString(int[] nums){
-      String str = String.valueOf(nums);
-      for(int i = 0; i < nums.length; i++){
-        Arrays.toString(nums);
-    }
-      return str;
+      String seperator = "";
+      for (int num : nums) {
+
+        seperator = seperator + " " + num;
+      }
+      return seperator;
     }
 }
